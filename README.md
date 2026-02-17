@@ -141,24 +141,6 @@ Update `appsettings.json` in the `ApiTest` project:
 | `PUT` | `/api/products/{id}` | Update a product |
 | `DELETE` | `/api/products/{id}` | Delete a product |
 
-### 🔍 Query Parameters
-
-| Parameter | Type | Description | Example |
-|---|---|---|---|
-| `search` | `string` | Filter by name or description | `?search=laptop` |
-| `category` | `string` | Filter by category | `?category=electronics` |
-| `minPrice` | `decimal` | Minimum price filter | `?minPrice=10` |
-| `maxPrice` | `decimal` | Maximum price filter | `?maxPrice=500` |
-| `sortBy` | `string` | Field to sort by | `?sortBy=price` |
-| `sortOrder` | `string` | `asc` or `desc` | `?sortOrder=desc` |
-| `page` | `int` | Page number | `?page=2` |
-| `pageSize` | `int` | Results per page | `?pageSize=10` |
-
-**Example request:**
-```
-GET /api/products?search=phone&category=electronics&sortBy=price&sortOrder=asc&page=1&pageSize=10
-```
-
 ---
 
 <div align="center">
